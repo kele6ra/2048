@@ -102,14 +102,14 @@ class Game {
         config.bestContainer
       ])
     ]))
-    config.gameContainer.appendChild(createElement('div', { className: 'above-game' }, [
-      createElement('div', { className: 'game-intro', innerText: config.desc }),
-      createElement('div', { className: 'restart-button', innerText: config.newGameButtonText })
-    ]))
     config.gameContainer.appendChild(createElement('div', { className: 'game-container' }, [
       config.gameMessageContainer,
       config.gridContainer,
       config.tileContainer
+    ]))
+    config.gameContainer.appendChild(createElement('div', { className: 'above-game' }, [
+      createElement('div', { className: 'game-intro', innerText: config.desc }),
+      createElement('div', { className: 'restart-button', innerText: config.newGameButtonText })
     ]))
   }
 }
